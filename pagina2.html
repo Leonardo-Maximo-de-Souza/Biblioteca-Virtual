@@ -9,57 +9,75 @@
 
        .menu
        {
-        color: black;
+        background-color:black;
         text-decoration: none;
         font-weight:bold ;
         margin: 30px;
         text-align: right;
+        font-size: 20px;
        } 
-       section
-       {
-        margin:50px;
-        width: 1000px;
-        height: 150px;
-       }
-       .redes-sociais
-       {
-        width: 150px;
-        height: 150px;
+      body
+      {
+        background-color:aqua;
+      }
+      .pesquisa
+      {
+        width: 400px;
+        height: 40px;
+        margin: 200px auto;
+    
+      }
+      #texto
+      {
+        width: 300px;
+        height: 30px;
         float: left;
-        margin: left 20px; ;
-       }
-       
+        font-family: Helvetica;
+        font-size: 20px;
+      }
+      
+      .pes
+      {
+        width: 20px;
+        height: 20px;
+        padding: 5px 10px;
+        background-color: green;
+        
+      }
     </style>
 </head>
 <body>
     <div class="menu">
         <a href="#">Home</a>
-        <a href="#">Livros</a>
+        <a href="#">acervos</a>
         <a href="#">Cadastro</a>
         <a href="#">Login</a>
-        <a href="#">Perfil</a>
         <a href="#">Sair</a>
     </div>
-    <section>
-        <div class="redes-sociais" id="instagram"></div>
-        <div class="redes-sociais" id="facebook"></div>
-        <div class="redes-sociais" id="twitter"></div>
-        <div class="redes-sociais" id="youtube"></div>
+    <form class="pesquisa">
+    <input type="search" id="texto" list="pesquisados">
+    <img src="lupa2.png" class="pes">
+    <datalist id="pesquisados">
+        <option value="mistério e suspense"></option>
+        <option value="romance"></option>
+        <option value="adolescentes"></option>
+        <option value="literatura e ficção"></option>
+        <option value="negócios"></option>
+        <option value="histórias"></option>
+        <option value="esporte e lazer" ></option>
+        <option value="religião e espiritualidade"></option>
+        <option value="terror"></option>
+        <option value="biografias"></option>
+        <option value="ficção cientifíca"></option>
+        <option value="saúde"></option>
 
-    </section>
 
-    <label>
-		<span class="screen-reader-text">Pesquisar por:</span>
-		<input type="search" class="search-field"
-			placeholder="Pesquisar &hellip;"
-			value="" name="s"
-			title="Pesquisar por:" />
-	</label>
-    <div id="page" class="site">
 
-		
 
-			
+
+
+    </datalist>
+    </form>
        
 
 </body>
