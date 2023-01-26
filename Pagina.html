@@ -6,76 +6,56 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Biblioteca Virtual</title>
     <style type="text/css">
-        header
+        img
         {
-            grid-area: header;
-            background-color: aqua;
-            width: 300vw;
-            height: 40vh;
-            background-color: red;
-            border: 100px white;
-            display: grid;
-            grid-template-areas: 
-            'header header'
-            'nav main'
-            'footer footer';
-
-            grid-template-columns: 25% 75%;
-            grid-template-rows: 20% 70% 10%;
+           display:flex;
+           width: 300px;   
+           height: 200px;          
+        }
+        .container
+        {
+            border: 10px red;
         }
         .menu
         {
          position: right;   
-         background-color:black;
+         background-color: yellowgreen;
          font-weight:bold ;
-         margin: auto;
+         margin: 20px;
          text-align: right;
          font-size: 20px;
         } 
-       body
+        main
        {
-         background-image: (bg-image); 
-       }
-       #texto
-       {
-         
-         width: 300px;
-         height: 30px;
-         float: left;
-         font-family: Helvetica;
-         font-size: 20px;
-       }
-       .IFRN
-       {
-        width: 500px;
-        height: 200px;
-        float: center;
-       }
-       main
-       {
+        display:flex;
         text-align: center;
-        width: 100px;
-        height: 100px;
+        width: 400px;
+        height: 400px;
+        font-size: 20px;
        }
        footer
        {
+        display: block;
         position: absolute;
-        background-color: blue;
-        padding: auto px;
-        border: 1px solid white;
+        background-color: yellowgreen;
+        padding: auto;
         text-align: center;
-        bottom: 0%;
+        bottom: 5px;
+        
        }
       
        </style>
 
 </head>
 <body>
-    
-    <div class="container">
-        <header>
-            <img src="logo IFRN.png" class="IFRN">
-        </header>
+    <header class="container">
+        <div class="logo">
+            <center>
+                <img src="logo IFRN.png">
+            </center>
+             
+        </div>
+    </header>      
         <nav>
         </div>
         <div class="menu">
