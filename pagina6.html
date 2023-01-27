@@ -4,19 +4,172 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="pagina6.css"/>
     <title>Document</title>
+    <style type="text/css">
+        .container
+        {
+            width: 100vw;
+            height: 100vh;
+
+            display: grid;
+            grid-template-areas: 
+            'header header header'
+            'nav main aside'
+            'footer footer footer';
+
+            grid-template-columns: 20% 60% 20%;
+            grid-template-rows: 30% 60% 10%;
+        }
+        header
+        {
+            grid-area: header;
+            
+        }
+        nav
+        {
+            border: 1px solid black;
+            display: flex;
+            flex-direction: column;
+            grid-area: nav;
+        }
+        main 
+        {
+            border: 1px solid black;
+            text-align: center;
+            display: flex;
+            justify-content: space-around;
+
+            grid-area: main;
+    
+        }
+        aside
+        {
+            grid-area: aside;
+        
+        }
+        footer
+        {
+            grid-area: footer;
+            text-align: center;
+            background-color: green;
+        }
+        
+        
+
+        @media screen and (max-width: 860px) and (min-width: 550px){
+            .container
+            {
+                grid-template-areas: 
+                'header header'
+                'nav main'
+                'footer footer';
+                grid-template-columns: 20% 80%;
+            }
+            aside
+            {
+                display: none;
+            }
+
+        }
+
+        @media screen and (max-width: 549px){
+            .container{
+                grid-template-areas: 
+                'header'
+                'nav'
+                'main'
+                'aside'
+                'footer';
+                grid-template-columns: 100%;
+                grid-template-rows: 20% 10% 40% 20% 10%;
+            }
+            
+        }
+      *  {
+        box-sizing: border-box;
+    font-family: sans-serif;
+}
+#menu-h
+{
+  list-style: none;
+  padding: 0;
+  background-color: green ;
+
+    
+}
+#menu-h li
+{
+    display: inline;
+}
+#menu-h li a
+{
+    color: black;
+    padding: 20px;
+    display: inline-block;
+    text-decoration: none;
+}
+button
+{
+    color: white;
+    background-color: green;
+}
+    </style>
 </head>
 <body>
-    <ul id="menu-h">
-        <li>  <a href="Pagina.html">Home</a></li>
-        <li>  <a href="pagina2.html">Lista de Livros</a></li>
-        <li>  <a href="pagina3.html">Acervos</a>
-        <li> <a href="pagina4.html">Cadastro</a></li>
-        <li> <a href="pagina5.html">Login</a></li>
-        <li><a href="#">Sair</a></li>
-     </ul> 
-     <img width="300px" src="logo IFRN.png"/>
-    
+    <div class="container">
+        <header> <ul id="menu-h">
+            <li>  <a href="Pagina.html">Home</a></li>
+            <li>  <a href="pagina2.html">Lista de Livros</a></li>
+            <li>  <a href="pagina3.html">Acervos</a>
+            <li> <a href="pagina4.html">Cadastro</a></li>
+            <li> <a href="pagina5.html">Login</a></li>
+            <li><a href="#">Sair</a></li>
+         </ul> 
+         <img width="300px" src="logo IFRN.png" /></header>
+        <nav>
+            <p>inicio</p>
+            <p>perfil</p>
+            <p>Livros</p>
+
+        </nav>
+        <main>
+            
+            <p>Perfil
+                <br>
+                <br>
+                <br>
+                vizualize e edite suas <br>
+                informaçoes pessoais. <br>
+                <br>
+                <br>
+                <br>
+                <button>Acessar</button></p>
+
+                <br>
+                <br>
+                
+                <p> Livros
+                    <br>
+                    <br>
+                    <br>
+                    todos os livros disponiveís
+                     <br>
+                para os usuários.<br>
+                <br>
+                <br>
+                <br>
+                <button>Acessar</button></p>
+
+        </main>
+        <aside>
+            <img width="300px" src="bv1.jpg"/>
+            <p>A biblioteca virtual tem como objetivo<br>
+            facilitar o acesso a livros que ajudem a<br>
+            estudar determinados assuntos de cursos. </p>
+        </aside>
+        <footer>
+            <p>biblioteca virtual-IFRN Cang 2023</p>
+        </footer>
+    </div>
 </body>
 </html>
