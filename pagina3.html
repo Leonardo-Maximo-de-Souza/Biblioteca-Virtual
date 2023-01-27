@@ -9,6 +9,7 @@
          *
       {
         margin: 0;
+        padding: 0;
       }
        .menu
        {
@@ -23,38 +24,73 @@
        {
         background-color: greenyellow;
         width: 100%;
-        height: 10%;
+        height: 40px;
+        background-color: green;
        }
        nav
        {
-        background-color: aqua;
+        background-color:aqua;
         width: 100%;
-        height:20% ;
+        height:150px;
        }
        nav img
        {
         float: left;
         margin: 3px;
         padding: 6px;
+        background-color:aqua;
        }
-       main
+       main 
        {
-        width: 100%;
-        height: 60%;
-       }
-       aside 
-       {
-        background-color: blueviolet;
+        background-color: cyan;
         width: 50%;
-        height:60%;
-        float: left;
+        height: 1500Px;
+        
        }
+       aside
+       {
+      
+        background-color: black;
+        width: 50%;
+        height: 1500px;
+       }
+       .i1 , .i2, .i3, .i4
+       {
+          width: 200px; 
+          height: 200px; 
+          margin: 10px;
+        
+        
+       }
+       .py, .to, .fi, .po
+       {
+        font-size: 15px;
+        font-family: arial;
+        padding: 10px;
+        margin: 10px;
+        
+
+       }
+       h1,h2,h3,h4
+       {
+        font-size:20px ;
+       }
+    
+       
+      
        footer
        {
         background-color: greenyellow;
         text-align: center;
         width:100% ;
-        height: 10%;
+        height: 25px;
+        font-size: 15px;
+       }
+       aside 
+       {
+            
+            
+            
        }
        
        
@@ -65,43 +101,111 @@
   <header> 
         
     <div class="menu">
-        <a href="Pagina.html">Home / </a>
-        <a href="pagina2.html">lista de itens / </a>
-        <a href="">Detalhe dos itens / </a>
-        <a href="#">Cadastro / </a>
-        <a href="#">Login / </a>
-        <a href="#">Sair</a>
+        <div class="menu">
+            <a href="Pagina.html#item1">Home/</a>
+            <a href="pagina2.html">lista de item/</a>
+            <a href="pagina4.html">cadastro do usuario/</a>
+            <a href="pagina5.html">Autenticação/</a>
+            <a href="pagina6.html">perfil/</a>
+            <a href="pagina7.html">Dados pessoais/</a>
+            <a href="pagina8.html">compras e inscriçoes/</a>
+            <a href="#">itens cadastrados/</a>
+            <a href="#">cadastrar item</a>
+        
+          </div>
     </div>
   </header>
   <nav>
     <img src="ifrn.jpg">
   </nav>
   <main>
-    <aside >
-        <img src="python.jpg" id="item1" width="200px" height="100px">
+    <div class="py">
+        <img src="python.jpg" id="item1" class="i1">
         <h1>python</h1>
         <p>Autor: Nilo Ney Coutinho menezes</p>
         <p>Introdução à Programação com Python: Algoritmos e Lógica de<br>
             Programação Para Iniciantes</p>
+    </div>
+    <div class="to">
+        <img src="toca.jpg" id="item2" class="i2">
+        <h2>Toca o barco</h2>
+        <p>Autor: Bruno Thys</p>
+        <p>Histórias de Ricardo Boechat contadas por quem<br>
+             conviveu e trabalhou com ele</p>
+    </div>
+    <div class="fi">
+        <img src="ficcao.jpg" id="item3" class="i3">
+        <h3>Eu, Robô</h3>
+        <p>Isaac Asimov</p>
+        <p>é um conjunto de nove contos, interconectados pela Dra. <br>
+            Susan Calvin, que apresenta seus relatos sobre a evolução<br>
+             dos autômatos através do tempo. É nesta obra que Asimov <br>
+             apresentada as célebres Três Leis da Robótica, princípios <br>
+             que regem o comportamento dos autômatos em toda a sua trajetória.</p>
+    </div>
+    <div class="po">
+        <img src="popular.jpg" id="item4" class="i4">
+        <h4>O Alquimista</h4>
+        <p>Autor: Paulo Coelho</p>
+        <p>Combinando espiritualidade, sabedoria e misticismo, O alquimista <br>
+            é uma inspiradora e emocionante história de autodescoberta que <br>
+            vem transformando a vida de milhões de leitores ao redor do mundo<br>
+             há mais de trinta anos.</p>
+    <aside class="maior">
+        <div class="boto1">
+           <a href="pagina5.html"><input type="submit" value="Login" class="log"></a>
+            <a href="pagina4.html"><input type="submit" value="Inscrição"class="ins"></a>
+            <br><br>
+            <p>Quantidade de livros disponiveis: 4<br>
+            Inscritos: 10<br>
+            categoria: Linguagem de programação<br>
+            Público:</p>
+                <ul>
+                    <li>Todas as idades</li>
+                </ul>
+        </div>
+        <di class="boto2">
+            <a href="pagina5.html"><input type="submit" value="Login" class="log"></a>
+            <a href="pagina4.html"><input type="submit" value="Inscrição"class="ins"></a>
+            <br><br>
+            <p>Quantidade de livros disponiveis: 1<br>
+            Inscritos: 10<br>
+            categoria: Bibliografias<br>
+            Público:</p>
+                <ul>
+                    <li>Todas as idades</li>
+                </ul>
         
-        <img src="" id="item2" width="200px" height="100px">
-        <h2></h2>
-        <p></p>
-        <p></p>
-        
-        <img src="i" id="item4" width="200px" height="100px">
-        <h3></h3>
-        <p></p>
-        <img src="i" id="item4" width="200px" height="100px">
-        <h4></h4>
-        <p></p>
-    </aside>
-    <aside>
-
-    </aside>
+        </di>
+        <div class="boto3">
+            <a href="pagina5.html"><input type="submit" value="Login" class="log"></a>
+            <a href="pagina4.html"><input type="submit" value="Inscrição"class="ins"></a>
+            <br><br>
+            <p>Quantidade de livros disponiveis: 3<br>
+            Inscritos: 06<br>
+            categoria: Ficção cientifica<br>
+            Público:</p>
+                <ul>
+                    <li>Todas as idades</li>
+                </ul>
+        </div>
+        <div class="boto4">
+            <a href="pagina5.html"><input type="submit" value="Login" class="log"></a>
+            <a href="pagina4.html"><input type="submit" value="Inscrição"class="ins"></a>
+            <br><br>
+            <p>Quantidade de livros disponiveis: 5<br>
+            Inscritos: 12<br>
+            categoria: popular<br>
+            Público:</p>
+                <ul>
+                    <li>Todas as idades</li>
+                </ul>
+        </div>
+  </aside>
   </main> 
+
   <footer>
-    <a href="https://portal.ifrn.edu.br/">IFRN</a>
+    <p>Biblioteca virtual ifrn</p>
   </footer> 
    
     
